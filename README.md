@@ -3,17 +3,15 @@ This is a python script that generates a swift class for the given instance vari
 Generated swift class includes NSCoding delgete and few utility functions for Yapdatabase such as
 key, collection, saveWithTransaction, fetch, fetchAll.  
 
-# Example
-tab spaces: 4
-class name: User
-variables: 3
-variable name, type:
-name String
-surname String
-id Int
-key variable name: id
+# Example input parameters
+tab spaces = 4 <br></br>
+class name = User <br></br>
+variables = [[name, String], [surname, String], [id, Int]]<br></br>
+key variable's name = id
 
 # Generated Code
+
+```swift
 import YapDatabase
 import Foundation
 
@@ -65,3 +63,4 @@ class User: NSObject, NSCoding {
         return res
     }
 }
+```
